@@ -11,6 +11,7 @@ def is_not_safe_position(board, i, j, r):
         return True
     return False
 
+
 def find_positions(board, row, n):
     """ Finds all safe position (i, j) where n queens
     can be allocated
@@ -46,6 +47,7 @@ def create_chess_board(size):
     """ generates a list of zeros """
 
     return [0 * size for i in range(size)]
+
 
 if len(sys.argv) != 2:
     print("Usage: nqueens N")
